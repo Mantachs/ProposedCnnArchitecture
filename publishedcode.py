@@ -16,6 +16,7 @@ In order to encourage the model to learn features related to the shape of PRPDs,
 Functional keras was used for the implementation. 
 Since there are six classes , in addition to the no-pattern class, the resultant output has seven nodes. 
 The loss weights in compile is related to including the effect of each class on the decision making' in other words, on the parameters update. In this work, the weights were used in regards to the used examples in order to have same effect of all classes on the decision making.
+X is a matrix including all training examples and trainy is the one-hot vector corresponding to each training example.
 """
 
 #import all libraries
