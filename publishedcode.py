@@ -18,7 +18,23 @@ Since there are six classes , in addition to the no-pattern class, the resultant
 The loss weights in compile is related to including the effect of each class on the decision making' in other words, on the parameters update. In this work, the weights were used in regards to the used examples in order to have same effect of all classes on the decision making.
 """
 
-shuffle=False
+#import all libraries
+import tensorflow
+tensorflow.random.set_seed(1)
+from numpy.random import seed
+import matplotlib.pyplot as plt
+from tensorflow import keras 
+import os
+import cv2
+from scipy.io import loadmat
+from tensorflow.keras.layers import Dense, Activation,Flatten,Conv2D, MaxPooling2D,Dropout,BatchNormalization
+import tensorflow as tf
+from tensorflow.keras import layers
+tf.keras.backend.clear_session() 
+from tensorflow.keras.utils import plot_model
+from numpy.random import seed
+seed(1)
+
 
 input1 = keras.Input(shape=(100,100, 1))
 x = BatchNormalization(       )( input1 )
